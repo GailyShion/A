@@ -1,7 +1,7 @@
 // MarketPage-Page 1
 
 import React from "react";
-import { StyleSheet, View, Text, TouchableOpacity,Image, ScrollView, TextInput, TouchableHighlight} from "react-native";
+import { StyleSheet, View, Text, TouchableOpacity,Image, ScrollView, TextInput, Modal} from "react-native";
 
 
 const Page1 = ({ navigation,}) => {
@@ -70,7 +70,7 @@ const Page1 = ({ navigation,}) => {
       height: 45,
       alignItems: "center",
       justifyContent: "center",
-      marginLeft: 10,
+      marginLeft: 30,
       }}
       onPress={() => navigation.navigate({ name: "Page2" })}
     >
@@ -255,9 +255,9 @@ const Page1 = ({ navigation,}) => {
 
 
     <TouchableOpacity
-      style={{backgroundColor: 'white',
+      style={{backgroundColor: '#abb8c3',
       width: "14%",
-      borderRadius: 20,
+      borderRadius: 0,
       height: 30,
       alignItems: "center",
       justifyContent: "center",
@@ -284,20 +284,20 @@ const Page1 = ({ navigation,}) => {
     <TouchableOpacity
       style={{backgroundColor: '#abb8c3',
       width: "12%",
-      height: 40,
+      height: -20,
       alignItems: "center",
       justifyContent: "center",
-      marginLeft: 30,
+      marginLeft: 200,
       }}
       onPress={() => navigation.navigate({ name: "Page1" })}
     >
       
       <Image  style={{
-            marginTop: 20,
-            height: 50,
+            marginTop: -2,
+            height: 40,
             width: 50,
             marginLeft:-365,
-            marginTop:-100
+            
 
           }}
           source={{
@@ -325,9 +325,6 @@ const Page1 = ({ navigation,}) => {
       }}>ADD TO CART NA!!!</Text>
 </View>
 
-     
-
-
       <View style={{
        
       }} ><Text style={{
@@ -342,7 +339,7 @@ const Page1 = ({ navigation,}) => {
 
 <View style={styles.flex6}>
          <ScrollView
-        vertical={true}
+        horizontal={true}
         showsHorizontalScrollIndicator={false}>
 
           <View>
@@ -359,8 +356,6 @@ const Page1 = ({ navigation,}) => {
           source={{
             uri: 'https://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2019/06/24/640/360/694940094001_6051739340001_6051738739001-vs.jpg',
           }}/>
-
-
           </TouchableOpacity>
 
         <Text style={{color: 'black',
@@ -380,6 +375,26 @@ const Page1 = ({ navigation,}) => {
          fontSize: 20,
 
          marginLeft:27,}}>₱299</Text>
+    
+    <TouchableOpacity onPress={() => console.log("Add to cart button pressed")}>
+        <View style={{
+          backgroundColor: 'teal',
+          alignSelf: 'center',
+          borderRadius: 20,
+          marginTop: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+        }}>
+          <Text style={{
+            color: 'white',
+            fontWeight: 'bold',
+            fontSize: 16,
+          }}>Add to Cart</Text>
+
+          
+        </View>
+
+      </TouchableOpacity>
 
         </View>
         
@@ -417,6 +432,25 @@ const Page1 = ({ navigation,}) => {
          fontSize: 20,
 
          marginLeft:27,}}>₱295</Text>
+
+
+
+<TouchableOpacity onPress={() => console.log("Add to cart button pressed")}>
+        <View style={{
+          backgroundColor: 'teal',
+          alignSelf: 'center',
+          borderRadius: 20,
+          marginTop: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+        }}>
+          <Text style={{
+            color: 'white',
+            fontWeight: 'bold',
+            fontSize: 16,
+          }}>Add to Cart</Text>
+        </View>
+      </TouchableOpacity>
         </View>
 
         <View>
@@ -452,7 +486,22 @@ const Page1 = ({ navigation,}) => {
          fontSize: 20,
 
          marginLeft:27,}}>₱305</Text>
-
+<TouchableOpacity onPress={() => console.log("Add to cart button pressed")}>
+        <View style={{
+          backgroundColor: 'teal',
+          alignSelf: 'center',
+          borderRadius: 20,
+          marginTop: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+        }}>
+          <Text style={{
+            color: 'white',
+            fontWeight: 'bold',
+            fontSize: 16,
+          }}>Add to Cart</Text>
+        </View>
+      </TouchableOpacity>
         </View>
 
         <View>
@@ -481,7 +530,7 @@ const Page1 = ({ navigation,}) => {
          fontWeight:'bold', 
          fontSize: 15,
          marginTop: 3,
-         marginLeft:27,}}> by Robert Greene</Text>
+         marginLeft:27,}}> by Robert teale</Text>
 
         
           <Text style={{color: 'black',
@@ -490,7 +539,22 @@ const Page1 = ({ navigation,}) => {
 
          marginLeft:27,}}>₱1,050</Text>
 
-
+<TouchableOpacity onPress={() => console.log("Add to cart button pressed")}>
+        <View style={{
+          backgroundColor: 'teal',
+          alignSelf: 'center',
+          borderRadius: 20,
+          marginTop: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+        }}>
+          <Text style={{
+            color: 'white',
+            fontWeight: 'bold',
+            fontSize: 16,
+          }}>Add to Cart</Text>
+        </View>
+      </TouchableOpacity>
         </View>
 
         <View>
@@ -507,6 +571,7 @@ const Page1 = ({ navigation,}) => {
           source={{
             uri: 'https://th.bing.com/th/id/OIP.36az0Rxa1Ot9zPsUew0aQgHaHa?pid=ImgDet&rs=1',
           }}/>
+          
           </TouchableOpacity>
 
           <Text style={{color: 'black',
@@ -525,8 +590,25 @@ const Page1 = ({ navigation,}) => {
           <Text style={{color: 'black',
          color: 'red',
          fontSize: 20,
-
+         
          marginLeft:27,}}>₱500</Text>
+
+<TouchableOpacity onPress={() => console.log("Add to cart button pressed")}>
+        <View style={{
+          backgroundColor: 'teal',
+          alignSelf: 'center',
+          borderRadius: 20,
+          marginTop: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+        }}>
+          <Text style={{
+            color: 'white',
+            fontWeight: 'bold',
+            fontSize: 16,
+          }}>Add to Cart</Text>
+        </View>
+      </TouchableOpacity>
         </View>
 
         <View>
@@ -563,7 +645,22 @@ const Page1 = ({ navigation,}) => {
          fontSize: 20,
 
          marginLeft:27,}}>₱1,500</Text>
-
+<TouchableOpacity onPress={() => console.log("Add to cart button pressed")}>
+        <View style={{
+          backgroundColor: 'teal',
+          alignSelf: 'center',
+          borderRadius: 20,
+          marginTop: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+        }}>
+          <Text style={{
+            color: 'white',
+            fontWeight: 'bold',
+            fontSize: 16,
+          }}>Add to Cart</Text>
+        </View>
+      </TouchableOpacity>
         </View>
 
         <View>
@@ -600,7 +697,22 @@ const Page1 = ({ navigation,}) => {
          fontSize: 20,
 
          marginLeft:27,}}>₱4,500</Text>
-
+<TouchableOpacity onPress={() => console.log("Add to cart button pressed")}>
+        <View style={{
+          backgroundColor: 'teal',
+          alignSelf: 'center',
+          borderRadius: 20,
+          marginTop: 10,
+          paddingVertical: 10,
+          paddingHorizontal: 20,
+        }}>
+          <Text style={{
+            color: 'white',
+            fontWeight: 'bold',
+            fontSize: 16,
+          }}>Add to Cart</Text>
+        </View>
+      </TouchableOpacity>
         </View>
 
 
@@ -611,8 +723,10 @@ const Page1 = ({ navigation,}) => {
         </ScrollView>
         </View>
 
+
         
 </View>
+
 <View style={{
         marginBottom: 50
       }} ><Text style={{
@@ -620,6 +734,278 @@ const Page1 = ({ navigation,}) => {
         fontSize:20,
         fontWeight:"bold"
       }}>     Book Recommendation!</Text>
+<Text style={{textAlign: 'center'}}>_________________________________________</Text>
+
+<View style={styles.flex6}>
+         <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}>
+
+          <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://a.wattpad.com/cover/7832618-288-k806419.jpg',
+          }}/>
+          </TouchableOpacity>
+
+        <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Tantei High</Text>
+
+       <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}> by PurpleYhan</Text>
+        
+         
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱295</Text>
+
+        </View>
+        
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://i.pinimg.com/736x/33/3f/7f/333f7f7e3782d3484aeb972e257e1aeb.jpg',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>MOON</Text>
+
+         <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}> by Maxinejiji</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>1,499</Text>
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://th.bing.com/th/id/OIP.qAjxqQ_md1MOBrAIxQ5P6gHaHS?pid=ImgDet&rs=1https://th.bing.com/th/id/OIP.qAjxqQ_md1MOBrAIxQ5P6gHaHS?pid=ImgDet&rs=1',
+          }}/>
+          </TouchableOpacity>
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Taming The Waves</Text>
+
+         <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by Inksteady</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱899</Text>
+
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://i.pinimg.com/originals/93/e7/18/93e718bd01374e3e3e703fd73deb5fc7.jpg',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Chasing the Sun</Text>
+
+        <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by Inksteady</Text>
+
+         
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱709</Text>
+
+
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://th.bing.com/th/id/OIP.NM--b0fcTmyP83X6Pivu9QAAAA?pid=ImgDet&rs=1',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Defend me, Attorney</Text>
+
+       <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by Josh Gonzales</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱599</Text>
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://cf.shopee.ph/file/39c6edd1332002346940fd822fd2c6e1_tn',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Convict me, Attorney</Text>
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by Josh Gonzales</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱1,699</Text>
+
+         
+
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://img.wattpad.com/cover/132616191-256-k895745.jpg',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Love At First Read</Text>
+
+         <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by chiXnita</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱799</Text>
+
+        </View>
+        </ScrollView>
+        </View>
+
+        </View>
+<View style={{
+        marginBottom: 50
+      }} ><Text style={{
+        marginTop: 50,
+        fontSize:20,
+        fontWeight:"bold"
+      }}>     New Released!</Text>
 <Text style={{textAlign: 'center'}}>_________________________________________</Text>
 
 <View style={styles.flex6}>
@@ -881,9 +1267,328 @@ const Page1 = ({ navigation,}) => {
         </View>
         </ScrollView>
         </View>
+        
+        </View>
+<View style={{
+        marginBottom: 50
+      }} ><Text style={{
+        marginTop: 50,
+        fontSize:20,
+        fontWeight:"bold"
+      }}>     Best Seller!</Text>
+<Text style={{textAlign: 'center'}}>_________________________________________</Text>
 
+<View style={styles.flex6}>
+         <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}>
+
+          <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://a.wattpad.com/cover/7832618-288-k806419.jpg',
+          }}/>
+          </TouchableOpacity>
+
+        <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Tantei High</Text>
+
+       <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}> by PurpleYhan</Text>
+        
+         
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱295</Text>
+
+        </View>
+        
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://i.pinimg.com/736x/33/3f/7f/333f7f7e3782d3484aeb972e257e1aeb.jpg',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>MOON</Text>
+
+         <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}> by Maxinejiji</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>1,499</Text>
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://th.bing.com/th/id/OIP.qAjxqQ_md1MOBrAIxQ5P6gHaHS?pid=ImgDet&rs=1https://th.bing.com/th/id/OIP.qAjxqQ_md1MOBrAIxQ5P6gHaHS?pid=ImgDet&rs=1',
+          }}/>
+          </TouchableOpacity>
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Taming The Waves</Text>
+
+         <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by Inksteady</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱899</Text>
+
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://i.pinimg.com/originals/93/e7/18/93e718bd01374e3e3e703fd73deb5fc7.jpg',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Chasing the Sun</Text>
+
+        <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by Inksteady</Text>
+
+         
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱709</Text>
+
+
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://th.bing.com/th/id/OIP.NM--b0fcTmyP83X6Pivu9QAAAA?pid=ImgDet&rs=1',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Defend me, Attorney</Text>
+
+       <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by Josh Gonzales</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱599</Text>
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://cf.shopee.ph/file/39c6edd1332002346940fd822fd2c6e1_tn',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Convict me, Attorney</Text>
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by Josh Gonzales</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱1,699</Text>
+
+        </View>
+
+        <View>
+          <TouchableOpacity onpress={() => console.log("Text Tapped")}>
+        <Image
+          style={{
+            resizeMode: "contain",
+            marginTop: 15,
+            marginLeft: 25,
+            height: 150,
+            width: 150,
+            borderRadius: 20,
+          }}
+          source={{
+            uri: 'https://img.wattpad.com/cover/132616191-256-k895745.jpg',
+          }}/>
+          </TouchableOpacity>
+
+          <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 20,
+         marginTop: 5,
+         marginLeft:27,}}>Love At First Read</Text>
+
+         <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 15,
+         marginTop: 3,
+         marginLeft:27,}}>by chiXnita</Text>
+        
+          <Text style={{color: 'black',
+         color: 'red',
+         fontSize: 20,
+
+         marginLeft:27,}}>₱799</Text>
+
+        </View>
+        </ScrollView>
+        </View>
         
 </View>
+<View style={{
+       
+      }} ><Text style={{
+        marginTop: 40,
+        fontWeight:"bold",
+        fontSize:20
+
+        
+      }}>     Feedbacks</Text>
+      
+<Text style={{textAlign: 'center'}}>_________________________________________</Text>
+
+<Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 25,
+         marginTop: 5,
+         marginLeft:27,}}> Franzen Dianne A.Llorin</Text>
+        
+        <Text style={{color: 'black',
+         color: 'teal',
+         fontSize: 20,
+
+         marginLeft:27,}}>comment: Highly recommended</Text>   
+
+         <Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 25,
+         marginTop: 5,
+         marginLeft:27,}}>GailyShion</Text>
+        
+        <Text style={{color: 'black',
+         color: 'teal',
+         fontSize: 20,
+
+         marginLeft:27,}}>comment: Nice Books!</Text>    
+
+<Text style={{color: 'black',
+         fontWeight:'bold', 
+         fontSize: 25,
+         marginTop: 5,
+         marginLeft:27,}}> Lia G. Eba</Text>
+        
+        <Text style={{color: 'black',
+         color: 'teal',
+         fontSize: 20,
+
+         marginLeft:27,}}>comment: Thank you, Mhie!</Text> 
+
+
+ </View>
 
 </ScrollView>
   </View>
